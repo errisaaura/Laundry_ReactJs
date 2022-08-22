@@ -13,10 +13,11 @@ export default class CustList extends React.Component{
                       <div className="dropdown m-3 btn-lg">
                         <a href="#" data-toggle="dropdown" className="btn btn-warning dropdown-toggle btn-lg">Options</a>
                         <div className="dropdown-menu">
-                          
+
                           <a href="#" className="dropdown-item has-icon" onClick={this.props.onEdit}><i className="far fa-edit"></i> Edit</a>
                           <div className="dropdown-divider"></div>
                           <a href="#" className="dropdown-item has-icon text-danger" onClick={this.props.onDel}><i className="far fa-trash-alt"></i> Delete</a>
+                          
                         </div>
                       </div>
                     </div>

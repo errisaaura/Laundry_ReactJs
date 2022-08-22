@@ -3,18 +3,18 @@ import React from "react";
 
 export default class PaketList extends React.Component {
 
-    converTime = time => {
-        let date = new Date(time)
-        return `${date.getDate()}/${Number(date.getMonth()) + 1}/${date.getFullYear()}`
-    }
+    // converTime = time => {
+    //     let date = new Date(time)
+    //     return `${date.getDate()}/${Number(date.getMonth()) + 1}/${date.getFullYear()}`
+    // }
     render() {
         return (
             <div className="card col-sm-12 my-1 " >
                 <div className="card-body row">
-                    <div className="card mb-3 rounded-pill bg-primary bg-opacity-10"  >
+                    <div className="card mb-2 bg-primary bg-opacity-10"  >
                         <div className="row g-0">
-                            <div className="col-sm-3">
-                                <img alt={this.props.nameImage} src={this.props.image} className="img-fluid rounded-start" />
+                            <div className="col-sm-3" width="150" height="250">
+                                <img alt={this.props.nameImage} src={this.props.image} className="img-fluid rounded-start mr-1" />
                             </div>
                             <div className="col-sm-5 me-2">
                                 <div className="card-body">

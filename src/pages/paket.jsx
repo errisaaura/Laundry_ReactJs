@@ -190,27 +190,30 @@ export default class Paket extends React.Component {
                 <div className="main-content">
                     <section className="section">
 
-                        <div className="mb-4 mt-4">
-                            <p>Halaman Paket</p>
+                        <div className="mb-2 mt-2">
+                            <h5>Halaman Paket</h5>
                             {console.log(this.state.pakets)}
+                            <div class="buttons d-flex justify-content-end mx-5">
+                            <a href="#" className="btn btn-icon icon-left btn-primary " onClick={() => this.addPaket()}><i class="fas fa-plus "></i> Add Paket</a>
+                            </div>
                         </div>
                         
                         <br />
-                        <div className="input-group d-flex justify-content-center">
+                        <div className="input-group d-flex">
 
-                            <input nama="text" className="form-control rounded-pill col-lg-7" placeholder="Search"
+                            {/* <input nama="text" className="form-control rounded-pill col-lg-7" placeholder="Search"
                                 name="keyword"
                                 value={this.state.keyword}
                                 onChange={e => this.setState({ keyword: e.target.value })}
                                 onKeyUp={e => this.search(e)} />
                             <div className="input-group-btn">
                                 <button className="btn btn-primary rounded-pill"><i className="fas fa-search"></i></button>
-                            </div>
-                            <div class="buttons d-flex justify-content-end mx-5">
+                            </div> */}
+                            {/* <div class="buttons d-flex justify-content-end mx-5">
                             <a href="#" className="btn btn-icon icon-left btn-primary " onClick={() => this.addPaket()}><i class="fas fa-plus "></i> Add Paket</a>
+                            </div> */}
                         </div>
-                        </div>
-                    <h6 class="mt-3 mx-5 px-5 text-danger "><small>*Masukkan keyword id / nama paket</small></h6>
+                    {/* <h6 class="mt-3 mx-5 px-5 text-danger "><small>*Masukkan keyword id / nama paket</small></h6> */}
 
                         <div className="row">
                             {this.state.pakets.map((item, index) => {

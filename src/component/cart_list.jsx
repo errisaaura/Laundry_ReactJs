@@ -15,7 +15,7 @@ export default class CartList extends React.Component {
 
                         <div class="card-footer card text-center">
                                 <div className="buttons">
-                                    <a href="#" className="btn btn-icon icon-left btn-lg btn-primary rounded-pill" onClick={this.props.onCart}><i className="fas fa-cart-arrow-down"></i>Add To Cart</a>                                                                        
+                                    <a href="#" className="btn btn-primary btn-icon icon-left btn-lg rounded-pill" onClick={this.props.onCart}><i className="fas fa-cart-arrow-down"></i>Add To Cart</a>                                                                        
                                 </div>
                         </div>
                     </div>

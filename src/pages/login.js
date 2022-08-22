@@ -69,7 +69,7 @@ export default class Login extends React.Component {
                 <form onSubmit={(e) =>  this.handleLogin(e)} className="signin-form">
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="username" value={this.state.username} placeholder="Username" tabindex="1" required autofocus onChange={this.handleChange}/>
+                    <input id="email" type="email" class="form-control" name="username" value={this.state.username} placeholder="Email" tabindex="1" required autofocus onChange={this.handleChange}/>
                     <div class="invalid-feedback">
                       Please fill in your email
                     </div>

@@ -160,7 +160,7 @@ export default class Laporan extends React.Component {
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">ID</th>
+                                        <th scope="col">Id Transaksi</th>
                                         <th scope="col">Admin</th>
                                         <th scope="col">member</th>
                                         <th scope="col">Tgl Transaksi</th>

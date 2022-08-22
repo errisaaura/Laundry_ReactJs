@@ -44,14 +44,12 @@ export default class Cart extends React.Component {
             .then(res => {
                 this.setState({
                     member : res.data.member
-                    // custCount: res.data.count
                 })
 
             })
             .catch(err => {
                 console.log(err.message)
             })
-        // console.log(this.state.custCount)
     }
     initCart = () => {
         // memanggil data cart pada localStorage
@@ -59,14 +57,6 @@ export default class Cart extends React.Component {
         if (localStorage.getItem("cart") !== null) {
             tempCart = JSON.parse(localStorage.getItem("cart"))
         }
-
-        // if (localStorage.getItem("customer") !== null) {
-        //     let customer = JSON.parse(localStorage.getItem("customer"))
-        //     this.setState({
-        //         id_member: customer.id_member,
-        //         customer_name: customer.name
-        //     })
-        // }
 
         // kalkulasi total harga
         let totalHarga = 0;
@@ -94,13 +84,9 @@ export default class Cart extends React.Component {
         } else {
             tempCart[index].qty = promptJumlah
             tempCart[index].subtotal = selectedItem.price * promptJumlah
-
         }
-
-
         // update localStorage
         localStorage.setItem("cart", JSON.stringify(tempCart))
-
         // refersh cart
         this.initCart()
     }
@@ -124,21 +110,14 @@ export default class Cart extends React.Component {
     }
 
     checkOut = () => {
-        window.location = "/checkout"
-
-        
-            
+        window.location = "/checkout"     
     }
-
 
 
     componentDidMount() {
         this.initCart()
         this.getMember()
-
     }
-
-
     render() {
         return (
             <div>
@@ -160,8 +139,6 @@ export default class Cart extends React.Component {
                                 <h5 className="text-primary">
                                     Admin: {localStorage.getItem("name")}
                                 </h5>
-
-                                
                                 <div class="table-responsive ">
                                     <table class="table table-sm ">
                                         <thead>

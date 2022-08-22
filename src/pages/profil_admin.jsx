@@ -83,11 +83,7 @@ export default class ProfilAdmin extends React.Component {
           <section className="section">
             <div class="section-header">
               <h1>{localStorage.getItem("role")}</h1>
-              <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a href="/home">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Components</a></div>
-                <div class="breadcrumb-item">User</div>
-              </div>
+              
             </div>
             {/* {this.state.admins.map((item, index) => {
               return ( */}

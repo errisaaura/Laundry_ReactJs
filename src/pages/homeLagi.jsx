@@ -24,24 +24,24 @@ export default class HomeLagi extends React.Component {
             nama_outlet: ""
 
         }
-        //ini buat set role admin
+        //pengecekan ada token apa tidak
+            //token dibutuhkan setiap saat mau ngakses API, token diambil dari local storage, data login disimpan ke local storage
         if (localStorage.getItem("token")) {
+
+          //ini buat set role admin
           if(localStorage.getItem("role") === "Admin" || localStorage.getItem("role") === "Kasir" || localStorage.getItem("role") === "Owner"){
             this.state.token = localStorage.getItem("token")
             this.state.id_outlet = localStorage.getItem("id_outlet")
             this.state.id_admin = localStorage.getItem("id_admin")
 
-
           }else {
             window.alert("Anda bukan salah satu admin outlet kami !")
             window.location = "/home"
           }
-            //pengecekan ada token apa tidak
-            //token dibutuhkan setiap saat mau ngakses API, token diambil dari local storage, data login disimpan ke local storage
             
-          } else {
+        } else {
             window.location = "/login"
-          }
+        }
       }
 
     //ini buat mengambil token yang nantinya berhubungan dengan auth pada postman
@@ -55,20 +55,20 @@ export default class HomeLagi extends React.Component {
     //ini untuk get all admin
     getAdmin = () => {
         let admin = (localStorage.getItem("name"))//json parse karna data yang dibutuhkan string
-        // let admin = JSON.parse(localStorage.getItem("username"))//json parse karna data yang dibutuhkan string
         let url = "http://localhost:8000/admin/"
 
         axios.get(url)
             .then(res => {
                 this.setState({
                     adminName: admin,
-                    adminCount: res.data.count
+                    adminCount: res.data.count //untuk mengambil jumlah nya
                 })
 
             })
             .catch(err => {
                 console.log(err.message)
             })
+            
         console.log(admin)
         console.log(this.state.adminCount)
 
@@ -238,7 +238,7 @@ export default class HomeLagi extends React.Component {
                 <div class="hero text-white hero-bg-image hero-bg-parallax " data-background="../assets/img/unsplash/andre-benz-1214056-unsplash.jpg" >
                   <div class="hero-inner">
                     <h2>Welcome, {localStorage.getItem("name")}!</h2>
-                    <p class="lead">Silahkan laundry barangmu harga terjangkau dengan hasil yang memuaskan pelanggan!!</p>
+                    {/* <p class="lead">Silahkan laundry barangmu harga terjangkau dengan hasil yang memuaskan pelanggan!!</p> */}
                     <div class="mt-4">
                       <a href="/profilAdmin" class="btn btn-outline-white btn-lg btn-icon icon-left text-white"><i class="far fa-user"></i> Setup Account</a>
                     </div>

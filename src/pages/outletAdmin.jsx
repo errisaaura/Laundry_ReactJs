@@ -185,26 +185,27 @@ export default class Outlet extends React.Component {
                 <div className="main-content">
                     <section className="section">
 
-                        <div className="mb-5">
-                            <p>Halaman Outlet</p>
+                        <div className="mb-1">
+                            <h5>Halaman Outlet</h5>
                             {console.log(this.state.outlets)}
+                            <div class="buttons d-flex justify-content-end mr-3">
+                            <a href="#" className="btn btn-icon icon-left btn-primary " onClick={() => this.addOutlet()}><i class="fas fa-plus "></i> Add Outlet</a>
+                            </div>
                         </div>
 
-                        <div className="input-group d-flex justify-content-center">
+                        {/* <div className="input-group d-flex">
 
-                            <input type="text" className="form-control rounded-pill col-lg-7" placeholder="Search"
+                            {/* <input type="text" className="form-control rounded-pill col-lg-7" placeholder="Search"
                                 name="keyword"
                                 value={this.state.keyword}
                                 onChange={e => this.setState({ keyword: e.target.value })}
                                 onKeyUp={e => this.search(e)} />
                             <div className="input-group-btn">
                                 <button className="btn btn-primary rounded-pill"><i className="fas fa-search"></i></button>
-                            </div>
-                            <div class="buttons d-flex justify-content-end mx-5">
-                            <a href="#" className="btn btn-icon icon-left btn-primary " onClick={() => this.addOutlet()}><i class="fas fa-plus "></i> Add Outlet</a>
-                        </div>
-                        </div>
-                    <h6 class="mt-3 mx-5 px-5 text-danger "><small>*Masukkan keyword nama / alamat outlet</small></h6>
+                            </div> 
+                            
+                        </div> */}
+                    {/* <h6 class="mt-3 mx-5 px-5 text-danger "><small>*Masukkan keyword nama / alamat outlet</small></h6> */}
 
 
                         <div class="row mt-5 d-flex justify-content-center">

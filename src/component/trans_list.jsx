@@ -3,6 +3,7 @@ import React from "react";
 
 
 export default class TransaksiList extends React.Component {
+    
     getAmount = (pakets) => {
         let total = 0
         pakets.map(item =>{

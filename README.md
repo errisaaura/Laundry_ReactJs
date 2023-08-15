@@ -1,70 +1,71 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Website Management Laundry
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Dashboard Hotel untuk kasir dan admin
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run Local
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone the project
 
-### `npm test`
+```bash
+  git clone https://github.com/errisaaura/Laundry_ReactJs
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Go to the project directory
 
-### `npm run build`
+```bash
+  cd Laundry_ReactJs
+``` 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  npm install
+``` 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the client
 
-### `npm run eject`
+```bash
+  npm run start
+``` 
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Client:** React
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Server:** https://github.com/errisaaura/Laundry_NodeJS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo by Video
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+https://drive.google.com/file/d/1nAzkIIsOUDl92X8YN5FK3FE_4nNkn2UI/view?usp=sharing
 
-## Learn More
+## Dashboard
+### Login
+![log](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/de00233d-df2a-4ae8-96ed-ef4c4c59e53a)
+### Home
+![home](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/506f0d35-b37d-4e21-bb45-924858880571)
+### List Customer
+![cust](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/27835681-0a2e-4f54-b628-831ea120445b)
+### List Admin
+![admin](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/09c53f21-afc4-48c5-bffd-ee7e887d3593)
+### List Outlet
+![outlet](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/593f94e0-a295-4bdc-bb5a-8426859aff51)
+### List Paket
+![paket](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/611057b9-e11e-42a9-b038-86850a42f4b4)
+### Add Transaksi
+![tambah_trans](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/65d69e8a-52c7-4fa5-99fc-ecd657267630)
+### Add To Chart
+![add_to_chart](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/3ea4292c-b467-4698-9999-976f5ae27d6d)
+### History Transaksi
+![History_trans](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/0e10a5e2-72b5-4d41-b4e8-3fe684542adc)
+### Laporan Transaksi
+![lap_trans](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/526b26e6-7c85-457a-9dc9-b72eadfd4ce0)
+### Cetak Laporan
+![cetak_lap](https://github.com/errisaaura/Laundry_NodeJS/assets/71597004/e0d93078-7f3b-4b8e-a9b2-9b25b4125563)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Feedback
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any feedback, please reach out to us at errisahidayah@gmail.com
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
